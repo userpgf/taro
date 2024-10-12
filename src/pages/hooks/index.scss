@@ -1,0 +1,29 @@
+.tabs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    padding: 0 20px;
+}
+
+.tab-item {
+    flex: 1;
+    text-align: center;
+}
+
+.tab-item-active {
+    color: red;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 4px;
+        width: 100%;
+        background-color: red;
+
+    }
+}

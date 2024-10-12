@@ -1,0 +1,45 @@
+.card {
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px 1px black;
+
+    .header {
+        // height: 350px;
+
+        img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    .main {
+        padding: 20px;
+
+        .title {
+            font-size: 46px;
+            font-weight: 500
+        }
+
+        .content {
+            margin-top: 10px;
+            font-size: 60px;
+            color: #666;
+        }
+    }
+
+    .footer {
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+
+        .btn-action {
+            height: 60px;
+            font-size: 26px;
+            font-weight: 600;
+            color: #1976d2
+        }
+    }
+
+}
