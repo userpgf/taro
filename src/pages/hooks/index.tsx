@@ -120,7 +120,7 @@ export default function Hooks() {
   }
   return (
     <View className='hooks'>
-      <Card title='标题' text='一堆文字' num={ 123} bol={true} />
+      <Card title='标题' text='一堆文字' num={123} bol={true} />
       <Card title='标题' text='一堆文字' num={123} bol={true} />
       <Card title='标题' text='一堆文字' num={123} bol={true} />
       <Card content={name} changeName={changname} />
