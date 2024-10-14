@@ -3,8 +3,19 @@ import { View, Image } from '@tarojs/components'
 import './index.scss'
 
 
+interface CardProps {
+    title?: string
+    text?: string
+    num?: number
+    content?:any
+    bol?: boolean
+    array?:Array<number> 
+    changeName:()=>void
+    
+}
 
-export default function Card() {
+
+export default function Card({ title ,num,bol,changeName,content,text} : CardProps) {
     return (
         <View className='card'>
             <View className='header'>
@@ -12,18 +23,28 @@ export default function Card() {
             </View>
             <View className='name'>
                 <View className='title'>
-                    Lorem
+                    {title}
                 </View>
                 <View className='content'>
-                    ipsum dolor sit amet consectetur adipisicing elit. Quae, dolorem! Fugit, at tempore mollitia quos beatae nostrum deleniti atque neque laudantium eum. Tenetur voluptate ullam in velit nulla accusamus ea.
-                    Ab ex dolor, enim labore suscipit vitae ea dolorum illum harum modi assumenda autem veritatis, id quos facilis! Quis, quos sit accusantium natus commodi quisquam blanditiis atque obcaecati distinctio cum?
-                    In adipisci sapiente iusto quaerat nihil dolore expedita, explicabo placeat, deleniti aliquam non eaque error impedit unde? Aliquam, nulla facilis beatae praesentium magnam deleniti vel fugiat laboriosam, sequi non obcaecati!
+                    {content}
+                </View>
+                <View>
+                    {text}
+                </View>
+                <View>
+                    {num}
+                </View>
+                <View>
+                    {bol}
+                </View>
+                <View>
+                    
                 </View>
             </View>
 
             <View className='footer' >
-                <View className='btn-action'>SHARE</View>
-                <View className='btn-action'>LEARN MORE</View>
+                <View className='btn-action' onClick={()=>changeName()}>确定</View>
+                <View className='btn-action'>取消</View>
             </View>
         </View>
 
